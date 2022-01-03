@@ -21,10 +21,19 @@ class PointService
     * @param 
     * @return 
     */
-	public function create($data){
+	public function create($model,$data){
 
 		//\Log::info('Ipoint: Point Service - Data: '.json_encode($data));
      	try {
+
+     		 // Data to Save
+          	$data = [
+            	'user_id' => $data["user_id"] ?? $model->user_id ?? \Auth::id(),
+            	'pointable_id' => $model->id,
+            	'pointable_type' => get_class($model),
+            	'description' => $data['description'] ?? null,
+            	'points' => $data['points'] ?? 0
+          	];
 
      		$point = $this->point->create($data);
 
