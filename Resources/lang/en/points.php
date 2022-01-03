@@ -21,4 +21,8 @@ return [
     ],
     'validation' => [
     ],
+    'settings' => [
+        'moneyForPoint' => 'Money for point',
+        'roundPoints' => 'Round Total Points (Before Assigning)'
+    ],
 ];

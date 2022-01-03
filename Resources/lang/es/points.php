@@ -21,4 +21,8 @@ return [
     ],
     'validation' => [
     ],
+    'settings' => [
+        'moneyForPoint' => 'Dinero por Punto (Equivalencia)',
+        'roundPoints' => 'Redondear el Total de Puntos (Los que el Usuario ganará) - Ejemplo: Si el total de puntos es 7.5 se redondeara a 8 - Si no esta activo ganaría 7',
+    ],
 ];
