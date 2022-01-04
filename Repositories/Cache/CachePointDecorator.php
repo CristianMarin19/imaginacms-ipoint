@@ -13,4 +13,12 @@ class CachePointDecorator extends BaseCacheCrudDecorator implements PointReposit
         $this->entityName = 'ipoint.points';
         $this->repository = $point;
     }
+
+    public function calculate($parameters,$conf)
+    {
+        return $this->remember(function () use ($parameters,$conf) {
+            return $this->repository->calculate($parameters, $conf);
+        });
+    }
+    
 }

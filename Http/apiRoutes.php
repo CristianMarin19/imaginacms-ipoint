@@ -11,4 +11,7 @@ $router->group(['prefix' =>'/ipoint/v1'], function (Router $router) {
     ]);
 // append
 
+    //======  PaymentMethod
+    require('ApiRoutes/paymentRoutes.php');
+
 });

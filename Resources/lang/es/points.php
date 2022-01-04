@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'single' => 'Puntos',
+    'description' => 'La descripcion del Modulo',
     'list resource' => 'Listar puntos',
     'create resource' => 'Crear puntos',
     'edit resource' => 'Editar puntos',
@@ -20,6 +22,7 @@ return [
     'messages' => [
     ],
     'validation' => [
+        'no point' => 'Puntos Insuficientes | Tus Puntos: :pointsUser - Puntos necesarios: :pointsItems |'
     ],
     'settings' => [
         'moneyForPoint' => 'Dinero por Punto (Equivalencia)',
