@@ -10,6 +10,12 @@ composer require imagina/ipoint-module=v8.x-dev
 php artisan module:enable Ipoint
 ```
 
+## Seeder
+
+```bash
+php artisan module:seed Ipoint
+```
+
 ## Migrations
 ```bash
 php artisan module:migrate Ipoint

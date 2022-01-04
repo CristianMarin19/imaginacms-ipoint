@@ -2,4 +2,5 @@
 
 return [
 	'name' => 'Ipoint',
+	'paymentName' => 'ipoint',
 ];
