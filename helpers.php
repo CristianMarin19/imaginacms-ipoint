@@ -10,8 +10,12 @@ if (!function_exists('ipointGetConfiguration')) {
  	function ipointGetConfiguration(){
 
         $paymentName = config('asgard.ipoint.config.paymentName');
-        $attribute = array('name' => $paymentName);
-        $paymentMethod = app("Modules\Icommerce\Repositories\PaymentMethodRepository")->findByAttributes($attribute); 
+        
+        // Params to Get Item
+        $params['filter'] = [
+            'field' => 'name'
+        ];
+        $paymentMethod = app("Modules\Icommerce\Repositories\PaymentMethodRepository")->getItem($paymentName,json_decode(json_encode($params)));
         
         return $paymentMethod;
     }
