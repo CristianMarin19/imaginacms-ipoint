@@ -8,7 +8,8 @@ return [
 	    'type' => 'input',
 	    'props' => [
 	      'label' => 'ipoint::points.settings.moneyForPoint',
-	      'type' => 'number'
+	      'type' => 'number',
+	      'hint' => 'ipoint::points.settingHints.moneyForPoint',
 	    ],
   	],
 
@@ -18,6 +19,7 @@ return [
 	    'type' => 'checkbox',
 	    'props' => [
 	      'label' => 'ipoint::points.settings.roundPoints',
+	      'hint' => 'ipoint::points.settingHints.roundPoints',
 	      'trueValue' => "1",
 	      'falseValue' => "0",
 	    ]
