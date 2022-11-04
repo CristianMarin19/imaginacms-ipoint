@@ -46,7 +46,7 @@ class IpointServiceProvider extends ServiceProvider
         $this->mergeConfigFrom($this->getModuleConfigFilePath('ipoint', 'settings-fields'), "asgard.ipoint.settings-fields");
         $this->mergeConfigFrom($this->getModuleConfigFilePath('ipoint', 'permissions'), "asgard.ipoint.permissions");
 
-        $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
+        //$this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
     }
 
     /**
