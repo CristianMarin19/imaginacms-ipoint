@@ -17,6 +17,7 @@ class IpointDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
+        $this->call(IpointModuleTableSeeder::class);
         
         $name = config('asgard.ipoint.config.paymentName');
         $result = PaymentMethod::where('name',$name)->first();
